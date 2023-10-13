@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-10-13 17:50:12'
+  postUpdate: '2023-10-13 18:17:20'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -156,23 +156,24 @@
 判断该二叉树是否是完全二叉树
 
 二、测试数据输入以下字符串，建立二叉树：ABC@@DE@G@@F@@@输出中序遍历序列应为：CBEGDFA输出后序遍历序列应为：CGEFDBA输出层次遍历序列应为：ABCDEFG输出二叉树的深度应为：5输出二叉树的叶子数目应为：3该二叉树不是完全二叉树
-三、解答
-  graph LR
-A((开始)) --&gt; B[输入字符串建立二叉树]
-B --&gt; C[创建二叉树]
-C --&gt; D[中序遍历序列]
-C --&gt; E[后序遍历序列]
-C --&gt; F[层序遍历序列]
-C --&gt; G[二叉树的深度]
-C --&gt; H[二叉树的叶子数目]
-C --&gt; I[判断是否完全二叉树]
-D --&gt; J((结束))
-E --&gt; J
-F --&gt; J
-G --&gt; J
-H --&gt; J
-I --&gt; J
-J --&gt; K ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/11/structure2/" title="数据结构2"><img class="post_bg" src="/img/structure.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构2"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/11/structure2/" title="数据结构2">数据结构2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-10T16:00:00.000Z" title="发表于 2023-10-11 00:00:00">2023-10-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-%E7%BC%96%E7%A8%8B/">C++编程</a></span></div><div class="content">一、实验内容编写递归算法计算二叉树中度为1:star: :star: :star:
+三、解答graph LR
+A((开始)) --> B[输入字符串建立二叉树]
+B --> C[创建二叉树]
+C --> D[中序遍历序列]
+C --> E[后序遍历序列]
+C --> F[层序遍历序列]
+C --> G[二叉树的深度]
+C --> H[二叉树的叶子数目]
+C --> I[判断是否完全二叉树]
+D --> J((结束))
+E --> J
+F --> J
+G --> J
+H --> J
+I --> J
+J --> K{是否完全二叉树?}
+K -- 是 --> L[输出是完全二叉树]
+K -- 否 --> M[输 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/11/structure2/" title="数据结构2"><img class="post_bg" src="/img/structure.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构2"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/11/structure2/" title="数据结构2">数据结构2</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-10T16:00:00.000Z" title="发表于 2023-10-11 00:00:00">2023-10-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-%E7%BC%96%E7%A8%8B/">C++编程</a></span></div><div class="content">一、实验内容编写递归算法计算二叉树中度为1:star: :star: :star:
 二、问题分析通过二叉树结构的递归特性来实现。若某结点的左右子树都不为空，则该结点拥有的度为1的结点为左右孩子结点拥有的之和；若某结点的左子树为空，右子树不为空，则该结点拥有的度为1的结点为该结点自身加上，右子树拥有的之和；同理，某结点的右子树为空，左子树不为空，则该结点拥有的度为1的结点为该结点自身加上，右子树拥有的之和；若该结点没有左右子树，则返回0。
 三、解答12345typedef struct Node &#123;	DataType data;//数据域	struct Node *leftchild;//左子树指针	struct Node *rightchild;//右子树指针&#125;BTNode;
 1234567891011121314//使用递归//计算二叉树中度为1的结点总数int singleNodes(BTNode *b) &#123;	if (b==NULL) &#123;		return 0;	&#125;	if ((b-&gt;leftchild == NULL &amp; ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/09/23/structure1/" title="数据结构1"><img class="post_bg" src="/img/structure.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数据结构1"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/09/23/structure1/" title="数据结构1">数据结构1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-09-22T16:00:00.000Z" title="发表于 2023-09-23 00:00:00">2023-09-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-%E7%BC%96%E7%A8%8B/">C++编程</a></span></div><div class="content">一、实验内容链表操作:star: :star: :star:
@@ -212,7 +213,7 @@ A[开 ...</div></div></div><div class="recent-post-item"><div class="post_cover 
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-%E7%BC%96%E7%A8%8B/"><span class="card-category-list-name">C++编程</span><span class="card-category-list-count">27</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%A8%B1%E4%B9%90/"><span class="card-category-list-name">娱乐</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">学习笔记</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B0%8Femo/"><span class="card-category-list-name">小emo</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B0%8F%E5%B7%A5%E5%85%B7/"><span class="card-category-list-name">小工具</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">45</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-11-10T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-10-13T09:50:11.922Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Sw1f7</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
+            </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">45</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-11-10T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-10-13T10:17:20.204Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Sw1f7</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><script type="text/javascript" id="maid-script" src="https://unpkg.com/mermaid@undefined/dist/mermaid.min.js?v=undefined"></script><script>if (window.mermaid) {
   var options = JSON.parse(document.getElementById('maid-script').getAttribute('mermaidoptioins'));
   mermaid.initialize(options);
 }</script></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
