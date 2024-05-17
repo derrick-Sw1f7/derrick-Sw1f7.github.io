@@ -20,7 +20,7 @@
       
         <tags>
             
-            <tag> ctf / pwn </tag>
+            <tag> PWN </tag>
             
         </tags>
       
@@ -64,7 +64,7 @@
       
         <tags>
             
-            <tag> ctf </tag>
+            <tag> PWN </tag>
             
         </tags>
       
@@ -89,7 +89,7 @@
       
         <tags>
             
-            <tag> ctf </tag>
+            <tag> PWN </tag>
             
         </tags>
       
@@ -133,7 +133,7 @@
       
         <tags>
             
-            <tag> ctf </tag>
+            <tag> MISC </tag>
             
         </tags>
       
@@ -669,6 +669,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> WEB </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -802,6 +808,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> WEB </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -839,6 +851,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> WEB </tag>
+            
+        </tags>
       
     </entry>
     
@@ -906,7 +924,7 @@
       
         <tags>
             
-            <tag> ctf </tag>
+            <tag> WEB </tag>
             
         </tags>
       
@@ -966,6 +984,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 洛天依 </tag>
+            
+        </tags>
       
     </entry>
     
