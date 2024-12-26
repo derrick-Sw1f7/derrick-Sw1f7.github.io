@@ -281,7 +281,7 @@ input numbers of array:12 33 22 12 15 18 33 33 22 22 17 16 3 5 6</p>
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo.sw1f7.top/',
+      envId: 'https://twikoo.sw1f7.cn/',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -293,7 +293,7 @@ input numbers of array:12 33 22 12 15 18 33 33 22 22 17 16 3 5 6</p>
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo.sw1f7.top/',
+      envId: 'https://twikoo.sw1f7.cn/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false

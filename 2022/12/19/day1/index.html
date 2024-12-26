@@ -286,7 +286,7 @@ X-FORWARDED-FOR:127.0.0.1</p>
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo.sw1f7.top/',
+      envId: 'https://twikoo.sw1f7.cn/',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -298,7 +298,7 @@ X-FORWARDED-FOR:127.0.0.1</p>
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: 'https://twikoo.sw1f7.top/',
+      envId: 'https://twikoo.sw1f7.cn/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
